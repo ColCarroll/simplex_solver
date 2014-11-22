@@ -1,11 +1,14 @@
 simplex_solver
 ==============
 
-Explanatory implementation of the simplex method
+Explanatory implementation of the simplex method.  Uses only standard python library and makes some WILD assumptions about solvability, so be gentle.  
 
 Usage
 =====
+The file can be run using the `main` function.  Edit the coefficients there.  All coefficients should be integers.  Didn't finish implementing the method for the case of equality constraints.
 
+
+```
 $ python simplex.py 
 We seek to minimize the function
 
@@ -50,3 +53,4 @@ Select row 2, column 5 as the pivot and reduce to get
 |      0      2/3    5/3    1      0      1/3    5      |      
 
 Now the first row is entirely nonpositive, so the minimum value of Z is -20
+```
